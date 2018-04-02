@@ -1,21 +1,21 @@
 package com.bbubbush.github.command;
 
-public class LightOnCommand implements Command{
-	Light light;
+public class CeilingFanOnCommand implements Command {
+	CeilingFan ceilingFan;
 	
-	public LightOnCommand(Light light) {
+	public CeilingFanOnCommand(CeilingFan ceilingFan) {
 		// TODO Auto-generated constructor stub
-		this.light = light;
+		this.ceilingFan = ceilingFan;
 	}
 	
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-		light.on();
+		ceilingFan.medium();
 	}
 	@Override
 	public void undo() {
 		// TODO Auto-generated method stub
-		light.off();
+		ceilingFan.off();
 	}
 }

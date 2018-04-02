@@ -12,4 +12,9 @@ public class LightOffCommand implements Command {
 		// TODO Auto-generated method stub
 		light.off();
 	}
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+		light.on();
+	}
 }
