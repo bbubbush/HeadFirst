@@ -12,19 +12,23 @@ public class CeilingFan {
 	public CeilingFan(String location) {
 		// TODO Auto-generated constructor stub
 		this.location = location;
+		speed = OFF;
 	}
 	public void high() {
-		System.out.println(location + "ceiling fan is on high");
+		speed = HIGH;
+		System.out.println(location + " is " + "high");
 	}
 	public void medium() {
-		System.out.println(location + "ceiling fan is on medium");
+		speed = MEDIUM;
+		System.out.println(location + " is " + "medium");
 	}
 	public void low() {
-		System.out.println(location + "ceiling fan is on low");
+		speed = LOW;
+		System.out.println(location + " is " + "low");
 	}
 	public void off() {
 		speed = OFF;
-		System.out.println(location + "ceiling fan is off");
+		System.out.println(location + " is " + "off");
 	}
 	public int getSpeed() {
 		return speed;

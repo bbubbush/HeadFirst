@@ -1,10 +1,10 @@
 package com.bbubbush.github.command;
 
-public class CeilingFanOffCommand implements Command {
+public class CeilingFanLowCommand implements Command {
 	CeilingFan ceilingFan;
 	int prevSpeed;
 	
-	public CeilingFanOffCommand(CeilingFan ceilingFan) {
+	public CeilingFanLowCommand(CeilingFan ceilingFan) {
 		// TODO Auto-generated constructor stub
 		this.ceilingFan = ceilingFan;
 	}
@@ -13,7 +13,7 @@ public class CeilingFanOffCommand implements Command {
 	public void execute() {
 		// TODO Auto-generated method stub
 		prevSpeed = ceilingFan.getSpeed();
-		ceilingFan.off();
+		ceilingFan.low();
 	}
 	
 	@Override
